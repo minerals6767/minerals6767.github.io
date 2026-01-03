@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Minerals: Industrial Intelligence Report 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fef2f2; /* Very light red tint */
+            color: #450a0a;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fef2f2; }
+        ::-webkit-scrollbar-thumb { background: #991b1b; border-radius: 10px; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#991b1b',
+                        'accent-crimson': '#ef4444',
+                        'bg-dark': '#450a0a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased relative">
+
+    <button id="backToTop" class="fixed bottom-6 right-6 z-[100] bg-primary-red text-white p-3 rounded-full shadow-2xl opacity-0 translate-y-10 transition-all duration-500 hover:bg-red-950">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <header class="bg-bg-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-sm font-bold text-red-400 hover:text-white transition duration-300">
+                    ← BACK TO GEMORA
+                </a>
+                <a href="#home" class="text-2xl font-extrabold tracking-tight">
+                    <span class="text-red-500">Crimson</span>Core
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="green-minerals.html" class="hover:text-red-400 transition duration-300">Green Report</a>
+                <a href="black-minerals.html" class="hover:text-red-400 transition duration-300">Black Report</a>
+                <a href="#analysis" class="hover:text-red-400 transition duration-300">Analysis</a>
+                <a href="#registry" class="hover:text-red-400 transition duration-300">Registry</a>
+            </nav>
+            <a href="#specs" class="hidden md:block border border-red-500 text-red-200 hover:bg-red-900 hover:text-white px-4 py-2 rounded-lg text-xs font-bold transition uppercase">Data Sheet</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <section id="home" class="text-center py-16 md:py-24 bg-white rounded-xl shadow-2xl mb-12 border-t-8 border-primary-red">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-bg-dark leading-tight">
+                The Red Spectrum:
+                <span class="block text-primary-red mt-2">Thermal Resistance and Ferrous Strength</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-red-900/70 max-w-3xl mx-auto mb-8">
+                Official 2025 Intelligence Report on Iron Oxides, Vanadium, and industrial Corundum for heavy manufacturing.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#registry" class="bg-primary-red hover:bg-bg-dark text-white font-bold py-3 px-8 rounded shadow-lg transition duration-300 transform hover:scale-105 text-center">
+                    Explore Registry
+                </a>
+                <a href="index.html" class="bg-red-100 hover:bg-red-200 text-primary-red font-bold py-3 px-8 rounded shadow-lg transition duration-300 transform hover:scale-105 text-center border border-red-200">
+                    BACK TO GEMORA
+                </a>
+            </div>
+        </section>
+
+        <section id="analysis" class="py-12 md:py-20 border-b border-red-100">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-bg-dark">Industrial Impact Analysis</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-red-50">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-red">The Iron Oxide Backbone</h3>
+                    <p class="text-red-900 leading-relaxed mb-4">
+                        Red minerals, specifically <strong>Hematite</strong>, remain the cornerstone of global steel production. In 2025, the focus has shifted toward high-purity red ores for green steel smelting technologies.
+                    </p>
+                    <p class="text-red-900 leading-relaxed">
+                        Additionally, <strong>Vanadinite</strong> is becoming critical for the production of Vanadium Redox Flow Batteries, providing a safe alternative for large-scale energy storage.
+                    </p>
+                </div>
+                
+                <div class="bg-red-950 p-8 rounded-xl shadow-md text-white">
+                    <h4 class="font-bold mb-6 text-red-400 uppercase text-sm tracking-wider">Demand Surge (2025-2030)</h4>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2"><span>High-Purity Hematite</span><span>+85%</span></div>
+                            <div class="w-full bg-red-900 h-3 rounded-full overflow-hidden">
+                                <div class="bg-red-400 h-full rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2"><span>Industrial Ruby (Lasers)</span><span>+42%</span></div>
+                            <div class="w-full bg-red-900 h-3 rounded-full overflow-hidden">
+                                <div class="bg-red-500 h-full rounded-full" style="width: 42%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registry" class="py-12 md:py-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-bg-dark">Mineral Criticality Registry</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-700 transition hover:shadow-2xl">
+                    <h3 class="text-xl font-bold text-red-900 mb-2">Hematite</h3>
+                    <p class="text-red-700 text-sm mb-4 leading-relaxed">The primary iron ore. Essential for heavy infrastructure and the automotive industry.</p>
+                    <div class="text-[10px] font-mono bg-red-50 p-3 rounded text-red-800">Chemistry: Fe<sub>2</sub>O<sub>3</sub></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500 transition hover:shadow-2xl">
+                    <h3 class="text-xl font-bold text-red-700 mb-2">Vanadinite</h3>
+                    <p class="text-red-700 text-sm mb-4 leading-relaxed">A secondary ore of Vanadium. Used in high-strength steel alloys and aerospace components.</p>
+                    <div class="text-[10px] font-mono bg-red-50 p-3 rounded text-red-800">Chemistry: Pb<sub>5</sub>(VO<sub>4</sub>)<sub>3</sub>Cl</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-400 transition hover:shadow-2xl">
+                    <h3 class="text-xl font-bold text-red-600 mb-2">Cinnabar</h3>
+                    <p class="text-red-700 text-sm mb-4 leading-relaxed">The main source of mercury. Highly regulated and used specifically in precision instrumentation.</p>
+                    <div class="text-[10px] font-mono bg-red-50 p-3 rounded text-red-800">Chemistry: HgS</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs" class="py-12 md:py-20">
+            <h2 class="text-3xl font-bold mb-8 text-center text-bg-dark uppercase tracking-tight">Technical Data Sheet</h2>
+            <div class="overflow-x-auto shadow-2xl rounded-2xl">
+                <table class="w-full text-left bg-white border-collapse">
+                    <thead>
+                        <tr class="bg-bg-dark text-white uppercase text-xs tracking-widest">
+                            <th class="p-5">Mineral</th>
+                            <th class="p-5">Mohs Hardness</th>
+                            <th class="p-5">Strategic Tier</th>
+                            <th class="p-5">Primary Use</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-red-900 divide-y divide-red-50">
+                        <tr class="hover:bg-red-50 transition">
+                            <td class="p-5 font-bold">Hematite</td>
+                            <td class="p-5">5.5 - 6.5</td>
+                            <td class="p-5 font-bold text-red-600">TIER 1</td>
+                            <td class="p-5 italic text-sm">Steel Manufacturing</td>
+                        </tr>
+                        <tr class="hover:bg-red-50 transition">
+                            <td class="p-5 font-bold">Vanadinite</td>
+                            <td class="p-5">3.0</td>
+                            <td class="p-5 font-bold text-red-500">TIER 2</td>
+                            <td class="p-5 italic text-sm">Energy Storage</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-bg-dark text-red-300 py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-2xl font-bold text-white uppercase tracking-tighter">CRIMSON<span class="text-red-500">CORE</span></div>
+            <div class="flex space-x-6 text-xs font-bold uppercase tracking-widest">
+                <a href="index.html" class="hover:text-white transition">Shop Home</a>
+                <a href="green-minerals.html" class="hover:text-white transition">Green</a>
+                <a href="black-minerals.html" class="hover:text-white transition">Black</a>
+                <a href="purple-minerals.html" class="hover:text-white transition">Purple</a>
+            </div>
+            <p class="text-[10px] opacity-50">© 2025 CRIMSON CORE Intelligence. A Gemora Group Publication.</p>
+        </div>
+    </footer>
+
+    <script>
+        const backBtn = document.getElementById("backToTop");
+        window.onscroll = () => {
+            if (window.scrollY > 400) {
+                backBtn.classList.replace("opacity-0", "opacity-100");
+                backBtn.classList.replace("translate-y-10", "translate-y-0");
+            } else {
+                backBtn.classList.replace("opacity-100", "opacity-0");
+                backBtn.classList.replace("translate-y-0", "translate-y-10");
+            }
+        };
+        backBtn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+    </script>
+</body>
+</html>

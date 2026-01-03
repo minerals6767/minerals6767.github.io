@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Minerals: Industrial Intelligence Report 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; 
+            color: #1e293b;
+        }
+        /* Custom Rainbow Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { 
+            background: linear-gradient(to bottom, #ef4444, #3b82f6, #10b981); 
+            border-radius: 10px; 
+        }
+        .rainbow-border {
+            border-image: linear-gradient(to right, #ef4444, #f59e0b, #10b981, #3b82f6, #8b5cf6) 1;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ef4444, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-prism': '#6366f1',
+                        'bg-dark': '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased relative">
+
+    <button id="backToTop" class="fixed bottom-6 right-6 z-[100] bg-bg-dark text-white p-3 rounded-full shadow-2xl opacity-0 translate-y-10 transition-all duration-500 hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <header class="bg-bg-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-sm font-bold text-slate-400 hover:text-white transition duration-300">
+                    ← BACK TO GEMORA
+                </a>
+                <a href="#home" class="text-2xl font-extrabold tracking-tight">
+                    <span class="text-gradient">Prism</span>Logic
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="indigo-minerals.html" class="hover:text-indigo-400 transition duration-300">Indigo Report</a>
+                <a href="orange-minerals.html" class="hover:text-orange-400 transition duration-300">Orange Report</a>
+                <a href="#analysis" class="hover:text-slate-300 transition duration-300">Analysis</a>
+                <a href="#registry" class="hover:text-slate-300 transition duration-300">Registry</a>
+            </nav>
+            <a href="#specs" class="hidden md:block border border-slate-700 text-slate-300 hover:bg-white hover:text-black px-4 py-2 rounded-lg text-xs font-bold transition uppercase">Data Sheet</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <section id="home" class="text-center py-16 md:py-24 bg-white rounded-xl shadow-2xl mb-12 border-t-8 rainbow-border relative overflow-hidden">
+            <div class="relative z-10 px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-bg-dark leading-tight">
+                    Multicolored Minerals:
+                    <span class="block text-gradient mt-2">Prismatic Interference & Photon Flow</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-8">
+                    Official 2025 Intelligence Report on Bismuth, Precious Opal, and Labradorite for advanced diffraction and quantum optics.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#registry" class="bg-bg-dark hover:bg-slate-800 text-white font-bold py-3 px-8 rounded shadow-lg transition duration-300 transform hover:scale-105 text-center">
+                        Explore Registry
+                    </a>
+                    <a href="index.html" class="bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold py-3 px-8 rounded shadow-lg transition duration-300 transform hover:scale-105 text-center border border-slate-200">
+                        BACK TO GEMORA
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="analysis" class="py-12 md:py-20 border-b border-slate-200">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-bg-dark">Structural Color Intelligence</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-slate-100">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-prism">Beyond Pigmentation</h3>
+                    <p class="text-slate-700 leading-relaxed mb-4">
+                        Unlike solid-color minerals, multicolored minerals like <strong>Labradorite</strong> utilize "labradorescence"—a light-interference phenomenon. In 2025, engineers are mimicking these lattice structures to create <strong>passive cooling coatings</strong> for satellites.
+                    </p>
+                    <p class="text-slate-700 leading-relaxed">
+                        Synthetic <strong>Bismuth</strong> crystals are critical for low-toxicity metallurgical applications, replacing lead in plumbing and high-end soldering for eco-conscious electronics.
+                    </p>
+                </div>
+                
+                <div class="bg-bg-dark p-8 rounded-xl shadow-md text-white">
+                    <h4 class="font-bold mb-6 text-slate-400 uppercase text-sm tracking-wider">Optics Market Projection</h4>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2"><span>Diffraction Grating Demand</span><span>+165%</span></div>
+                            <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+                                <div class="bg-gradient-to-r from-blue-400 to-purple-500 h-full rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2"><span>Quantum Photonic Sensors</span><span>+88%</span></div>
+                            <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+                                <div class="bg-gradient-to-r from-green-400 to-blue-500 h-full rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registry" class="py-12 md:py-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-bg-dark">Mineral Criticality Registry</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-purple-500 transition hover:shadow-2xl">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Bismuth</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">Hopper-shaped crystals with an iridescent oxide layer. Used as a safe, high-density alternative to lead.</p>
+                    <div class="text-[10px] font-mono bg-slate-50 p-3 rounded text-indigo-800 uppercase">Chemistry: Bi</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500 transition hover:shadow-2xl">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Precious Opal</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">Contains silica spheres that diffract light. Crucial for the study of photonic crystals and light manipulation.</p>
+                    <div class="text-[10px] font-mono bg-slate-50 p-3 rounded text-blue-800 uppercase">Chemistry: SiO<sub>2</sub>·nH<sub>2</sub>O</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500 transition hover:shadow-2xl">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Labradorite</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">A feldspar mineral showing schiller effects. Essential for research into anisotropic light reflections.</p>
+                    <div class="text-[10px] font-mono bg-slate-50 p-3 rounded text-green-800 uppercase">Chemistry: (Ca,Na)(Al,Si)<sub>4</sub>O<sub>8</sub></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs" class="py-12 md:py-20">
+            <h2 class="text-3xl font-bold mb-8 text-center text-bg-dark uppercase tracking-tight">Technical Data Sheet</h2>
+            <div class="overflow-x-auto shadow-2xl rounded-2xl">
+                <table class="w-full text-left bg-white border-collapse">
+                    <thead>
+                        <tr class="bg-bg-dark text-white uppercase text-xs tracking-widest">
+                            <th class="p-5">Mineral</th>
+                            <th class="p-5">Optical Effect</th>
+                            <th class="p-5">Industrial Tier</th>
+                            <th class="p-5">Application</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-900 divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="p-5 font-bold">Precious Opal</td>
+                            <td class="p-5">Diffraction</td>
+                            <td class="p-5 font-bold text-blue-600">TIER 1</td>
+                            <td class="p-5 italic text-sm">Photonics Research</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="p-5 font-bold">Bismuth</td>
+                            <td class="p-5">Iridescence</td>
+                            <td class="p-5 font-bold text-purple-600">TIER 2</td>
+                            <td class="p-5 italic text-sm">Eco-Metallurgy</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-bg-dark text-slate-400 py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-2xl font-bold text-white uppercase tracking-tighter">PRISM<span class="text-slate-500">LOGIC</span></div>
+            <div class="flex space-x-6 text-xs font-bold uppercase tracking-widest">
+                <a href="index.html" class="hover:text-white transition">Shop Home</a>
+                <a href="orange-minerals.html" class="hover:text-white transition">Orange</a>
+                <a href="indigo-minerals.html" class="hover:text-white transition">Indigo</a>
+                <a href="gray-minerals.html" class="hover:text-white transition">Gray</a>
+            </div>
+            <p class="text-[10px] opacity-50 text-center md:text-right">
+                © 2025 PRISM LOGIC Intelligence. Part of the Gemora Global Network.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("backToTop");
+        window.onscroll = () => {
+            if (window.scrollY > 400) {
+                btn.classList.replace("opacity-0", "opacity-100");
+                btn.classList.replace("translate-y-10", "translate-y-0");
+            } else {
+                btn.classList.replace("opacity-100", "opacity-0");
+                btn.classList.replace("translate-y-0", "translate-y-10");
+            }
+        };
+        btn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+    </script>
+</body>
+</html>

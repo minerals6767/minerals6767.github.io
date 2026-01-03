@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Minerals: Industrial Intelligence Report 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f9ff; /* Very light blue tint */
+            color: #082f49;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f0f9ff; }
+        ::-webkit-scrollbar-thumb { background: #0284c7; border-radius: 10px; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-cobalt': '#0284c7',
+                        'accent-sapphire': '#38bdf8',
+                        'bg-dark': '#082f49',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased relative">
+
+    <button id="backToTop" class="fixed bottom-6 right-6 z-[100] bg-primary-cobalt text-white p-3 rounded-full shadow-2xl opacity-0 translate-y-10 transition-all duration-500 hover:bg-sky-900">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <header class="bg-bg-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-sm font-bold text-accent-sapphire hover:text-white transition duration-300">
+                    ← BACK TO GEMORA
+                </a>
+                <a href="#home" class="text-2xl font-extrabold tracking-tight">
+                    <span class="text-sky-400">Cobalt</span>Pulse
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="red-minerals.html" class="hover:text-sky-300 transition duration-300">Red Report</a>
+                <a href="green-minerals.html" class="hover:text-sky-300 transition duration-300">Green Report</a>
+                <a href="#analysis" class="hover:text-sky-300 transition duration-300">Analysis</a>
+                <a href="#registry" class="hover:text-sky-300 transition duration-300">Registry</a>
+            </nav>
+            <a href="#specs" class="hidden md:block border border-sky-500 text-sky-200 hover:bg-sky-900 hover:text-white px-4 py-2 rounded-lg text-xs font-bold transition uppercase">Data Sheet</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <section id="home" class="text-center py-16 md:py-24 bg-white rounded-xl shadow-2xl mb-12 border-t-8 border-primary-cobalt relative overflow-hidden">
+            <div class="relative z-10 px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-bg-dark leading-tight">
+                    The Blue Spectrum:
+                    <span class="block text-primary-cobalt mt-2">Precision Photonics and Battery Stability</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-sky-900/70 max-w-3xl mx-auto mb-8">
+                    Official 2025 Intelligence Report on Cobalt ores, Sapphire-grade Corundum, and Azurite derivatives for high-tech manufacturing.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#registry" class="bg-primary-cobalt hover:bg-bg-dark text-white font-bold py-3 px-8 rounded shadow-lg transition duration-300 transform hover:scale-105 text-center">
+                        Explore Registry
+                    </a>
+                    <a href="index.html" class="bg-sky-100 hover:bg-sky-200 text-primary-cobalt font-bold py-3 px-8 rounded shadow-lg transition duration-300 transform hover:scale-105 text-center border border-sky-200">
+                        BACK TO GEMORA
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="analysis" class="py-12 md:py-20 border-b border-sky-100">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-bg-dark">Global Intelligence Analysis</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-sky-50">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-cobalt">The Cobalt Crunch</h3>
+                    <p class="text-sky-900 leading-relaxed mb-4">
+                        Blue minerals like <strong>Azurite</strong> and <strong>Cobaltite</strong> are at the heart of the "Blue Energy" revolution. Cobalt remains the critical component in high-density lithium-ion cathodes, providing the thermal stability required for rapid charging.
+                    </p>
+                    <p class="text-sky-900 leading-relaxed">
+                        Furthermore, industrial-grade <strong>Sapphire</strong> is now the primary substrate for high-power LED manufacturing and scratch-resistant optical windows for military-grade drones.
+                    </p>
+                </div>
+                
+                <div class="bg-sky-950 p-8 rounded-xl shadow-md text-white">
+                    <h4 class="font-bold mb-6 text-sky-400 uppercase text-sm tracking-wider">Projected Demand (2025-2030)</h4>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2"><span>Battery Grade Cobalt</span><span>+210%</span></div>
+                            <div class="w-full bg-sky-900 h-3 rounded-full overflow-hidden">
+                                <div class="bg-sky-400 h-full rounded-full" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2"><span>Optical Sapphire</span><span>+65%</span></div>
+                            <div class="w-full bg-sky-900 h-3 rounded-full overflow-hidden">
+                                <div class="bg-sky-500 h-full rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registry" class="py-12 md:py-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-bg-dark">Mineral Criticality Registry</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-sky-700 transition hover:shadow-2xl">
+                    <h3 class="text-xl font-bold text-sky-900 mb-2">Azurite</h3>
+                    <p class="text-sky-700 text-sm mb-4 leading-relaxed">A major copper carbonate. Beyond its copper yield, it is used in specialized high-frequency pigment tech.</p>
+                    <div class="text-[10px] font-mono bg-sky-50 p-3 rounded text-sky-800 uppercase">Chemistry: Cu<sub>3</sub>(CO<sub>3</sub>)<sub>2</sub>(OH)<sub>2</sub></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-sky-500 transition hover:shadow-2xl">
+                    <h3 class="text-xl font-bold text-sky-700 mb-2">Blue Sapphire</h3>
+                    <p class="text-sky-700 text-sm mb-4 leading-relaxed">Industrial Corundum. Used for high-pressure windows, satellite lenses, and semiconductor wafers.</p>
+                    <div class="text-[10px] font-mono bg-sky-50 p-3 rounded text-sky-800 uppercase">Chemistry: Al<sub>2</sub>O<sub>3</sub></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-sky-400 transition hover:shadow-2xl">
+                    <h3 class="text-xl font-bold text-sky-600 mb-2">Sodalite</h3>
+                    <p class="text-sky-700 text-sm mb-4 leading-relaxed">Highly valued in research for its ability to function as a molecular sieve in petrochemical refining.</p>
+                    <div class="text-[10px] font-mono bg-sky-50 p-3 rounded text-sky-800 uppercase">Chemistry: Na<sub>8</sub>Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>Cl<sub>2</sub></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs" class="py-12 md:py-20">
+            <h2 class="text-3xl font-bold mb-8 text-center text-bg-dark uppercase tracking-tight">Technical Data Sheet</h2>
+            <div class="overflow-x-auto shadow-2xl rounded-2xl">
+                <table class="w-full text-left bg-white border-collapse">
+                    <thead>
+                        <tr class="bg-bg-dark text-white uppercase text-xs tracking-widest">
+                            <th class="p-5">Mineral</th>
+                            <th class="p-5">Hardness</th>
+                            <th class="p-5">Tier</th>
+                            <th class="p-5">Application</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sky-900 divide-y divide-sky-50">
+                        <tr class="hover:bg-sky-50 transition">
+                            <td class="p-5 font-bold">Sapphire</td>
+                            <td class="p-5">9.0 (Mohs)</td>
+                            <td class="p-5 font-bold text-blue-600">TIER 1</td>
+                            <td class="p-5 italic text-sm">Aerospace Optics</td>
+                        </tr>
+                        <tr class="hover:bg-sky-50 transition">
+                            <td class="p-5 font-bold">Azurite</td>
+                            <td class="p-5">3.5 - 4.0</td>
+                            <td class="p-5 font-bold text-sky-500">TIER 2</td>
+                            <td class="p-5 italic text-sm">Copper Extraction</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-bg-dark text-sky-300 py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-2xl font-bold text-white uppercase tracking-tighter">COBALT<span class="text-sky-500">PULSE</span></div>
+            <div class="flex space-x-6 text-xs font-bold uppercase tracking-widest">
+                <a href="index.html" class="hover:text-white transition">Shop Home</a>
+                <a href="red-minerals.html" class="hover:text-white transition">Red</a>
+                <a href="green-minerals.html" class="hover:text-white transition">Green</a>
+                <a href="purple-minerals.html" class="hover:text-white transition">Purple</a>
+            </div>
+            <p class="text-[10px] opacity-50">© 2025 COBALT PULSE Intelligence. A Gemora Group Publication.</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("backToTop");
+        window.onscroll = () => {
+            if (window.scrollY > 400) {
+                btn.classList.replace("opacity-0", "opacity-100");
+                btn.classList.replace("translate-y-10", "translate-y-0");
+            } else {
+                btn.classList.replace("opacity-100", "opacity-0");
+                btn.classList.replace("translate-y-0", "translate-y-10");
+            }
+        };
+        btn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+    </script>
+</body>
+</html>

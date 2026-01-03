@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMORA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #7B3EBC; 
+            --secondary-color: #f7e6ff; 
+            --text-dark: #333;
+            --text-light: #f4f4f4;
+            --white: #fff;
+            --grey-light: #eee;
+            --grey-dark: #666;
+            --button-bg: #4B0082; 
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            background: linear-gradient(180deg, var(--white) 0%, var(--secondary-color) 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+            /* Ensures logo doesn't shrink and stays left */
+            flex-shrink: 0; 
+        }
+
+        .logo img {
+            height: 40px; 
+            margin-right: 10px;
+        }
+
+        /* Centering the nav links */
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex: 1; /* Takes up available space */
+            justify-content: center; /* Centers items within that space */
+        }
+
+        .nav-links li {
+            margin: 0 20px; /* Balanced spacing on both sides */
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Dropdown Styling */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--white);
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            z-index: 10;
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 5px 0;
+        }
+
+        .nav-links li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            padding: 10px 15px;
+            display: block;
+            white-space: nowrap;
+            text-align: left;
+            color: var(--text-dark);
+            font-weight: 400;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--grey-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('./images/hehe.png'); 
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            text-align: left;
+            padding: 150px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            max-width: 600px;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            background-color: var(--button-bg);
+            color: var(--white);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Product Cards Section */
+        .why-choose-us {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            font-size: 2.2em;
+            margin-bottom: 50px;
+            font-weight: 600;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none; 
+            color: var(--text-dark);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+            border-bottom: 1px solid var(--grey-light);
+        }
+
+        .card h3 {
+            font-size: 1.1em;
+            margin: 15px 0 0;
+            font-weight: 600;
+            padding: 0 15px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .feature-item {
+            text-align: center;
+            width: 180px; 
+        }
+
+        .feature-item i {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .feature-item p {
+            font-size: 1.0em;
+            font-weight: 500;
+            color: var(--grey-dark);
+        }
+
+        @media (max-width: 992px) {
+            .nav-links { display: none; }
+            .navbar { justify-content: center; }
+            .hero h1 { font-size: 2.5em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <img src="./images/logo.png" alt="Gemora Logo"> 
+                GEMORA
+            </a>
+            <ul class="nav-links">
+                <li><a href="#buy-minerals">Home</a></li>
+                <li class="dropdown-link">
+                    <a href="#">About Our Minerals</a>
+                    <div class="dropdown-menu">
+                        <a href="green-minerals.html">Green Minerals</a>
+                        <a href="colorless-minerals.html">Colorless Minerals</a>
+                        <a href="purple-minerals.html">Purple Minerals</a>
+                        <a href="red-minerals.html">Red Minerals</a>
+                        <a href="black-minerals.html">Black Minerals</a>
+                        <a href="blue-minerals.html">Blue Minerals</a>
+                        <a href="gray-minerals.html">Gray Minerals</a>
+                        <a href="indigo-minerals.html">Indigo Minerals</a>
+                        <a href="orange-minerals.html">Orange Minerals</a>
+                        <a href="multicolored-minerals.html">Multicolored Minerals</a>
+                        <a href="white-minerals.html">White Minerals</a>
+                        <a href="yellow-minerals.html">Yellow Minerals</a>
+                    </div>  
+                </li>
+            </ul>
+            <div style="width: 140px;" class="nav-placeholder"></div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Discover the Magic Within</h1>
+            <a href="#buy-minerals" class="btn">Explore Our Collection</a>
+        </div>
+    </section>
+
+    <section id="buy-minerals" class="why-choose-us">
+        <div class="container">
+            <h2>Our Mineral Collection</h2>
+            <div class="card-grid">
+                <a href="green-minerals.html" class="card">
+                    <img src="./images/hehehe.png" alt="Green Minerals">
+                    <h3>Green Minerals</h3>
+                </a>
+                <a href="colorless-minerals.html" class="card">
+                    <img src="./images/hehehehe.png" alt="Colorless Minerals">
+                    <h3>Colorless Minerals</h3>
+                </a>
+                <a href="purple-minerals.html" class="card">
+                    <img src="./images/Purple.png" alt="Purple Minerals">
+                    <h3>Purple Minerals</h3>
+                </a>
+                <a href="red-minerals.html" class="card">
+                    <img src="./images/Red.png" alt="Red Minerals">
+                    <h3>Red Minerals</h3>
+                </a>
+                <a href="black-minerals.html" class="card">
+                    <img src="./images/Balck.png" alt="Black Minerals">
+                    <h3>Black Minerals</h3>
+                </a>
+                <a href="blue-minerals.html" class="card">
+                    <img src="./images/Blue.png" alt="Blue Minerals">
+                    <h3>Blue Minerals</h3>
+                </a>
+                <a href="gray-minerals.html" class="card">
+                    <img src="./images/Gray.png" alt="Gray Minerals">
+                    <h3>Gray Minerals</h3>
+                </a>
+                <a href="indigo-minerals.html" class="card">
+                    <img src="./images/Indigo.png" alt="Indigo Minerals">
+                    <h3>Indigo Minerals</h3>
+                </a>
+                <a href="orange-minerals.html" class="card">
+                    <img src="./images/Orange.png" alt="Orange Minerals">
+                    <h3>Orange Minerals</h3>
+                </a>
+                <a href="rainbow-minerals.html" class="card">
+                    <img src="./images/Rainbow.png" alt="Multicolored Minerals">
+                    <h3>Multicolored Minerals</h3>
+                </a>
+                <a href="white-minerals.html" class="card">
+                    <img src="./images/White.png" alt="White Minerals">
+                    <h3>White Minerals</h3>
+                </a>
+                <a href="yellow-minerals.html" class="card">
+                    <img src="./images/Generated Image September 20, 2025 - 5_02PM.png" alt="Yellow Minerals">
+                    <h3>Yellow Minerals</h3>
+                </a>
+            </div>
+
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-leaf"></i>
+                    <p>Ethically Sourced</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-search-dollar"></i>
+                    <p>Quality Assured</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-hands-helping"></i>
+                    <p>Passionately Crafted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
