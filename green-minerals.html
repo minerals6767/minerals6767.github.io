@@ -3,124 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facts About Green Minerals</title>
+    <title>Green Minerals for Kids!</title>
     <style>
-        /* General Page Styling */
+        /* General Page Setup */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f7f4; /* Light mint green background */
-            color: #2c3e50;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+            background-color: #e8f5e9; /* Light mint green background */
+            color: #1b5e20; /* Dark forest green text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         /* Header Styling */
         header {
+            background-color: #4caf50; /* Bright green header */
+            color: white;
+            width: 100%;
             text-align: center;
             padding: 30px 0;
-            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        
+
         h1 {
-            color: #196f3d;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
 
-        /* Text Block Styling */
-        .intro-text, .outro-text {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            font-size: 1.1em;
-            margin-bottom: 30px;
+        /* Intro Paragraph */
+        .intro {
+            text-align: center;
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 30px 20px 10px 20px;
+            line-height: 1.6;
         }
 
-        /* Grid Layout for Mineral Facts */
-        .minerals-container {
-            display: grid;
-            grid-template-columns: 1fr;
+        /* Fact Cards Container */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        @media (min-width: 768px) {
-            .minerals-container {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        /* Individual Mineral Cards */
-        .mineral-card {
-            background-color: #ffffff;
-            border-left: 6px solid #27ae60;
             padding: 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease-in-out;
+            max-width: 1000px;
         }
 
-        .mineral-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        /* Individual Fact Cards */
+        .card {
+            background-color: white;
+            border: 4px solid #81c784; /* Soft green border */
+            border-radius: 15px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
         }
 
-        .mineral-card h2 {
-            color: #27ae60;
+        .card:hover {
+            transform: translateY(-10px); /* Lifts the card on hover */
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+            border-color: #2e7d32; /* Darker green border on hover */
+        }
+
+        .card h2 {
+            color: #388e3c;
+            font-size: 1.5em;
             margin-top: 0;
-            font-size: 1.4em;
-            border-bottom: 1px solid #eaeded;
+            border-bottom: 2px dashed #a5d6a7;
             padding-bottom: 10px;
         }
 
-        .mineral-card p {
-            margin-bottom: 0;
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2e7d32;
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Fun emoji icons for the cards */
+        .icon {
+            font-size: 3em;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Facts About Green Minerals</h1>
+        <h1>✨ The Magic of Green Minerals! ✨</h1>
     </header>
 
-    <div class="intro-text">
-        <p>Green minerals are not only visually appealing but also carry significant cultural and historical importance. Here are some interesting facts about green minerals:</p>
+    <div class="intro">
+        <p>Green minerals are amazing treasures found all over the Earth. These facts can help kids learn about the importance of green minerals and their exciting role in our daily lives!</p>
     </div>
 
-    <div class="minerals-container">
-        <div class="mineral-card">
-            <h2>Malachite</h2>
-            <p>A common green mineral used in paints and cosmetics, notably in ancient Egypt and the Renaissance.</p>
+    <div class="container">
+        <div class="card">
+            <div class="icon">💎</div>
+            <h2>Gemstones</h2>
+            <p>Green minerals are often found in nature and are used in various products. For example, <strong>emeralds</strong> are beautiful green gemstones that get their color from elements like chromium or vanadium.</p>
         </div>
 
-        <div class="mineral-card">
-            <h2>Emerald</h2>
-            <p>Known for its vibrant green hue, emeralds are often found in high-end jewelry.</p>
+        <div class="card">
+            <div class="icon">🌍</div>
+            <h2>Natural Sources</h2>
+            <p>Green minerals can be found right in the Earth's crust, often hiding inside rocks and soils. They are formed through cool natural processes, like the evaporation of water from oceans.</p>
         </div>
 
-        <div class="mineral-card">
-            <h2>Chrome Diopside</h2>
-            <p>Often referred to as the "poor man's emerald," chrome diopside is a bright green stone with remarkable clarity.</p>
+        <div class="card">
+            <div class="icon">🏗️</div>
+            <h2>Everyday Uses</h2>
+            <p>You might be surprised! Green minerals are used in many everyday items, such as shiny jewelry, strong construction materials, and even trace amounts in the food we eat.</p>
         </div>
 
-        <div class="mineral-card">
-            <h2>Olivine</h2>
-            <p>A common mineral used in refractory applications due to its high melting point and resistance to chemical alteration.</p>
-        </div>
-
-        <div class="mineral-card">
-            <h2>Alexandrite</h2>
-            <p>Known for its color-changing ability, alexandrite shifts from green in daylight to red under incandescent light.</p>
+        <div class="card">
+            <div class="icon">💪</div>
+            <h2>Health Benefits</h2>
+            <p>They aren't just pretty to look at—green minerals are important for our health, too! They help our bodies build super strong bones and healthy teeth.</p>
         </div>
     </div>
 
-    <div class="outro-text">
-        <p>These minerals not only add beauty to various products but also hold cultural significance in different societies. Their unique properties and historical uses make them fascinating subjects of study and appreciation.</p>
-    </div>
+    <footer>
+        <p>Keep exploring and learning about the wonderful world of rocks and minerals!</p>
+    </footer>
 
 </body>
 </html>
