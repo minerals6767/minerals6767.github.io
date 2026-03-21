@@ -3,203 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Minerals: Industrial Intelligence Report 2025</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Black Minerals for Kids!</title>
     <style>
-        html { scroll-behavior: smooth; }
+        /* General Page Setup - Dark Cave Theme */
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #111827; /* Deep Charcoal */
-            color: #e5e7eb;
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+            background-color: #1e1e24; /* Dark slate background */
+            color: #f5f5f5; /* Off-white text for readability */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #1f2937; }
-        ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 10px; }
+
+        /* Header Styling */
+        header {
+            background-color: #111115; /* Pitch black header */
+            color: #e0e0e0;
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            border-bottom: 4px solid #555;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px rgba(255,255,255,0.2);
+        }
+
+        /* Intro/Outro Paragraphs */
+        .intro, .outro {
+            text-align: center;
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 30px 20px 10px 20px;
+            line-height: 1.6;
+        }
+
+        .outro {
+            color: #a8b2d1; /* Cool grayish-blue for the special meaning text */
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        /* Fact Cards Container */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1100px;
+        }
+
+        /* Individual Fact Cards */
+        .card {
+            background-color: #2b2b36; /* Lighter gray for the cards */
+            border: 4px solid #5c5c68; /* Silver border */
+            border-radius: 15px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Lifts the card on hover */
+            box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+            border-color: #ffffff; /* Border glows white on hover */
+        }
+
+        .card h2 {
+            color: #ffffff;
+            font-size: 1.5em;
+            margin-top: 0;
+            border-bottom: 2px dashed #7b7b8a;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            color: #d1d1e0;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            background-color: #111115;
+            color: #e0e0e0;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2em;
+            border-top: 4px solid #555;
+        }
+
+        /* Fun emoji icons for the cards */
+        .icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-obsidian': '#000000',
-                        'accent-zinc': '#71717a',
-                        'bg-card': '#1f2937',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body class="antialiased relative">
+<body>
 
-    <button id="backToTop" class="fixed bottom-6 right-6 z-[100] bg-zinc-700 text-white p-3 rounded-full shadow-2xl opacity-0 translate-y-10 transition-all duration-500 hover:bg-zinc-600">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-        </svg>
-    </button>
-
-    <header class="bg-black text-white shadow-lg sticky top-0 z-50 border-b border-zinc-800">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-6">
-                <a href="index.html" class="text-sm font-bold text-zinc-500 hover:text-white transition duration-300">
-                    ← BACK TO GEMORA
-                </a>
-                <a href="#home" class="text-2xl font-extrabold tracking-tight">
-                    <span class="text-zinc-400">Obsidian</span>Core
-                </a>
-            </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="red-minerals.html" class="hover:text-red-500 transition duration-300">Red Report</a>
-                <a href="colorless-minerals.html" class="hover:text-slate-400 transition duration-300">Colorless Report</a>
-                <a href="#analysis" class="hover:text-zinc-400 transition duration-300">Analysis</a>
-                <a href="#registry" class="hover:text-zinc-400 transition duration-300">Registry</a>
-            </nav>
-            <a href="#specs" class="hidden md:block border border-zinc-700 text-zinc-400 hover:bg-zinc-800 hover:text-white px-4 py-2 rounded-lg text-xs font-bold transition">DATA SHEET</a>
-        </div>
+    <header>
+        <h1>🌑 The Mystery of Black Minerals! 🌑</h1>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
+    <div class="intro">
+        <p>Step into the shadows and discover some of the coolest, darkest rocks on Earth! Let's learn about these amazing black minerals.</p>
+    </div>
 
-        <section id="home" class="text-center py-16 md:py-24 bg-zinc-900 rounded-xl shadow-2xl mb-12 border-t-8 border-black">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-white leading-tight">
-                The Black Spectrum:
-                <span class="block text-zinc-500 mt-2">Conductivity and Structural Strength</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-zinc-400 max-w-3xl mx-auto mb-8">
-                Official 2025 Intelligence Report on carbon-based minerals and high-density oxides.
-            </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#registry" class="bg-white text-black hover:bg-zinc-200 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-center">
-                    Explore Minerals
-                </a>
-                <a href="index.html" class="bg-zinc-800 hover:bg-zinc-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-center">
-                    Return to Shop
-                </a>
-            </div>
-        </section>
-
-        <section id="analysis" class="py-12 md:py-20 border-b border-zinc-800">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-white">Strategic Importance</h2>
-            <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div class="p-8 bg-zinc-900 rounded-xl shadow-lg border border-zinc-800">
-                    <h3 class="text-2xl font-semibold mb-4 text-zinc-200">The Energy Catalyst</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-4">
-                        Black minerals like <strong>Graphite</strong> are the backbone of the green energy transition. As the primary component of Lithium-ion battery anodes, graphite demand is projected to quadruple by 2030.
-                    </p>
-                    <p class="text-zinc-400 leading-relaxed">
-                        Additionally, <strong>Magnetite</strong> remains the most important ore for high-grade steel, supporting the structural integrity of modern infrastructure.
-                    </p>
-                </div>
-                
-                <div class="bg-zinc-900 p-8 rounded-xl shadow-md border border-zinc-800">
-                    <h4 class="font-bold mb-6 text-zinc-200 uppercase text-sm tracking-wider">Demand Forecast (2025-2030)</h4>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-2"><span>Graphite (Battery Grade)</span><span class="text-zinc-400">+240%</span></div>
-                            <div class="w-full bg-zinc-800 h-3 rounded-full overflow-hidden">
-                                <div class="bg-white h-full rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-2"><span>Ilmenite (Titanium)</span><span class="text-zinc-400">+35%</span></div>
-                            <div class="w-full bg-zinc-800 h-3 rounded-full overflow-hidden">
-                                <div class="bg-zinc-500 h-full rounded-full" style="width: 35%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="registry" class="py-12 md:py-20">
-            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-white">Mineral Criticality Registry</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-zinc-900 p-6 rounded-xl shadow-lg border-t-4 border-zinc-500 transform transition hover:-translate-y-2">
-                    <h3 class="text-xl font-bold text-white mb-2">Natural Graphite</h3>
-                    <p class="text-zinc-400 text-sm mb-4 leading-relaxed">High electrical conductivity and heat resistance. Essential for electric vehicle battery anodes.</p>
-                    <div class="text-[10px] font-mono bg-black p-3 rounded text-zinc-300">Chemistry: C (Carbon)</div>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-black transform transition hover:-translate-y-2">
-                    <h3 class="text-xl font-bold text-black mb-2">Magnetite</h3>
-                    <p class="text-zinc-600 text-sm mb-4 leading-relaxed">Highly ferrimagnetic. A major iron ore used in industrial magnets and heavy-duty construction.</p>
-                    <div class="text-[10px] font-mono bg-zinc-100 p-3 rounded text-black font-bold">Chemistry: Fe<sub>3</sub>O<sub>4</sub></div>
-                </div>
-                <div class="bg-zinc-900 p-6 rounded-xl shadow-lg border-t-4 border-zinc-700 transform transition hover:-translate-y-2">
-                    <h3 class="text-xl font-bold text-white mb-2">Cassiterite</h3>
-                    <p class="text-zinc-400 text-sm mb-4 leading-relaxed">The primary ore of tin. Crucial for soldering in all electronic circuit boards.</p>
-                    <div class="text-[10px] font-mono bg-black p-3 rounded text-zinc-300">Chemistry: SnO<sub>2</sub></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="specs" class="py-12 md:py-20">
-            <h2 class="text-3xl font-bold mb-8 text-center text-white uppercase tracking-tight">Technical Data Sheet</h2>
-            <div class="overflow-x-auto shadow-2xl rounded-2xl">
-                <table class="w-full text-left bg-zinc-900 border-collapse">
-                    <thead>
-                        <tr class="bg-black text-white uppercase text-xs tracking-widest">
-                            <th class="p-5">Mineral</th>
-                            <th class="p-5">Mohs Hardness</th>
-                            <th class="p-5">Density (g/cm³)</th>
-                            <th class="p-5">Primary Application</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-zinc-400 divide-y divide-zinc-800">
-                        <tr class="hover:bg-zinc-800 transition">
-                            <td class="p-5 font-bold text-white">Graphite</td>
-                            <td class="p-5">1.5 - 2.0</td>
-                            <td class="p-5">2.26</td>
-                            <td class="p-5 italic text-sm">Battery Anodes</td>
-                        </tr>
-                        <tr class="hover:bg-zinc-800 transition">
-                            <td class="p-5 font-bold text-white">Magnetite</td>
-                            <td class="p-5">5.5 - 6.5</td>
-                            <td class="p-5">5.17</td>
-                            <td class="p-5 italic text-sm">Steel Manufacturing</td>
-                        </tr>
-                        <tr class="hover:bg-zinc-800 transition">
-                            <td class="p-5 font-bold text-white">Cassiterite</td>
-                            <td class="p-5">6.0 - 7.0</td>
-                            <td class="p-5">6.95</td>
-                            <td class="p-5 italic text-sm">Electronics Soldering</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-black text-zinc-600 py-16 border-t border-zinc-900">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-2xl font-bold text-white"><span class="text-zinc-500">OBSIDIAN</span>CORE</div>
-            <div class="flex space-x-6 text-xs font-bold uppercase tracking-widest">
-                <a href="index.html" class="hover:text-white transition">Home</a>
-                <a href="red-minerals.html" class="hover:text-red-500 transition">Red</a>
-                <a href="colorless-minerals.html" class="hover:text-white transition">Colorless</a>
-                <a href="#analysis" class="hover:text-white">Analysis</a>
-            </div>
-            <p class="text-[10px] opacity-50 max-w-xs text-center md:text-right">
-                © 2025 OBSIDIAN CORE Intelligence. A Gemora Group Publication.
-            </p>
+    <div class="container">
+        <div class="card">
+            <div class="icon">🌋</div>
+            <h2>Obsidian</h2>
+            <p>A natural volcanic glass! It's created when high-silica lava cools very rapidly. It gets its dark black coloration from microscopic magnetite and iron oxide hiding inside.</p>
         </div>
-    </footer>
 
-    <script>
-        const backToTopButton = document.getElementById("backToTop");
-        window.onscroll = function() {
-            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-                backToTopButton.classList.remove("opacity-0", "translate-y-10");
-                backToTopButton.classList.add("opacity-100", "translate-y-0");
-            } else {
-                backToTopButton.classList.add("opacity-0", "translate-y-10");
-                backToTopButton.classList.remove("opacity-100", "translate-y-0");
-            }
-        };
-        backToTopButton.onclick = function() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        };
-    </script>
+        <div class="card">
+            <div class="icon">🧲</div>
+            <h2>Hematite</h2>
+            <p>An iron oxide mineral with a super shiny, metallic luster. It is famous for its distinctive silver-black appearance and its cool magnetic properties.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🪵</div>
+            <h2>Jet</h2>
+            <p>Jet is actually an organic gemstone formed from fossilized wood! It comes from ancient environments that lacked oxygen, which stopped the wood from turning completely into coal.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">☄️</div>
+            <h2>Black Diamond</h2>
+            <p>Also known as Carbonado, these are made of diamond and graphite tightly packed together. They are formed in extreme places, like super-deep inside the Earth or even from meteoritic impacts from space!</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔥</div>
+            <h2>Coal</h2>
+            <p>Derived from the squishing (compaction) of ancient organic matter and sediments over millions of years. Today, it is used for energy production and making construction materials.</p>
+        </div>
+    </div>
+
+    <div class="outro">
+        <p>✨ These black minerals not only hold geological significance but also have cultural and metaphysical meanings, often associated with protection, strength, and transformation. ✨</p>
+    </div>
+
+    <footer>
+        <p>Keep exploring and learning about the wonderful world of rocks and minerals!</p>
+    </footer>
 
 </body>
 </html>
