@@ -3,204 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colorless Minerals: Industrial Intelligence Report 2025</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Clear & Cool Mineral Facts for Kids!</title>
     <style>
-        html { scroll-behavior: smooth; }
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            background-color: #F0F4F8; /* Light sky blue background */
+            color: #333333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
         }
-        /* Custom scrollbar for a clean crystal look */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f5f9; }
-        ::-webkit-scrollbar-thumb { background: #64748b; border-radius: 10px; }
+
+        h1 {
+            color: #2980B9;
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 2px 2px #AED6F1;
+        }
+
+        p.intro {
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .mineral-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .mineral-card {
+            background-color: #FFFFFF;
+            border-left: 8px solid #BDC3C7; /* Silver border for clear minerals */
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .mineral-card:hover {
+            transform: scale(1.02);
+            border-left: 8px solid #34495E;
+        }
+
+        .mineral-name {
+            color: #2980B9;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .conclusion {
+            background-color: #D6EAF8;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #2E86C1;
+        }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-slate': '#334155',
-                        'accent-silver': '#94a3b8',
-                        'bg-dark': '#0f172a',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body class="antialiased relative">
+<body>
 
-    <button id="backToTop" class="fixed bottom-6 right-6 z-[100] bg-primary-slate text-white p-3 rounded-full shadow-2xl opacity-0 translate-y-10 transition-all duration-500 hover:bg-slate-900">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-        </svg>
-    </button>
+    <h1>💎 Amazing Clear Minerals! 💎</h1>
+    
+    <p class="intro">Did you know that some of the coolest rocks on Earth have no color at all? They look like ice but never melt! Let's learn about one called Calcite!</p>
 
-    <header class="bg-bg-dark text-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-6">
-                <a href="index.html" class="text-sm font-bold text-accent-silver hover:text-white transition duration-300">
-                    ← BACK TO GEMORA
-                </a>
-                <a href="#home" class="text-2xl font-extrabold tracking-tight hover:text-accent-silver transition duration-300">
-                    <span class="text-slate-400">Crystal</span>Clear
-                </a>
-            </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="red-minerals.html" class="text-red-400 hover:text-red-300 transition duration-300">View Red Report</a>
-                <a href="#analysis" class="hover:text-slate-400 transition duration-300">Analysis</a>
-                <a href="#registry" class="hover:text-slate-400 transition duration-300">Registry</a>
-                <a href="#specs" class="hover:text-slate-400 transition duration-300">Data Sheet</a>
-            </nav>
-            <a href="#specs" class="hidden md:block border border-slate-500 text-slate-300 hover:bg-slate-700 hover:text-white px-4 py-2 rounded-lg text-xs font-bold transition">DOWNLOAD DATA</a>
-        </div>
-    </header>
+    <ul class="mineral-list">
+        <li class="mineral-card">
+            <span class="mineral-name">Calcite: The Bubble Rock</span>
+            Calcite is a see-through mineral that has a secret trick! If you put a little bit of vinegar on it, it will actually start to bubble and fizz! This is how scientists know they've found it.
+        </li>
+        <li class="mineral-card">
+            <span class="mineral-name">Calcite: The Shape Shifter</span>
+            Calcite is famous for being a "shape shifter." It can grow into over 300 different shapes! It is a very common mineral that you can find almost anywhere on our planet.
+        </li>
+        <li class="mineral-card">
+            <span class="mineral-name">Calcite: From Buildings to Bling</span>
+            Even though it looks clear, it is very useful! People use it to help build big buildings and also to make sparkly jewelry for people to wear.
+        </li>
+    </ul>
 
-    <main class="container mx-auto px-4 py-8">
-
-        <section id="home" class="text-center py-16 md:py-24 bg-white rounded-xl shadow-2xl mb-12 border-t-8 border-slate-400">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-bg-dark leading-tight">
-                The Colorless Spectrum:
-                <span class="block text-slate-500 mt-2">The Foundation of High-Tech Transparency</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-8">
-                Official 2025 Intelligence Report on high-purity minerals driving the semiconductor and photonics industries.
-            </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#registry" class="bg-primary-slate hover:bg-bg-dark text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-center">
-                    Explore Minerals
-                </a>
-                <a href="index.html" class="bg-slate-100 hover:bg-slate-200 text-bg-dark font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-center">
-                    Return to Shop
-                </a>
-            </div>
-        </section>
-
-        <section id="analysis" class="py-12 md:py-20 border-b border-slate-200">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-primary-slate">Global Economic Analysis</h2>
-            <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div class="p-8 bg-white rounded-xl shadow-lg border border-slate-100">
-                    <h3 class="text-2xl font-semibold mb-4 text-bg-dark">The Purity Premium</h3>
-                    <p class="text-slate-700 leading-relaxed mb-4">
-                        In 2025, the demand for <strong>High-Purity Quartz (HPQ)</strong> reached a critical inflection point. As AI-driven chip manufacturing scales, the industry requires quartz with less than <strong>20 ppm</strong> of impurities.
-                    </p>
-                    <p class="text-slate-700 leading-relaxed">
-                        The semiconductor industry's "silicon-run" relies entirely on colorless quartz crucibles. Without these, global tech production would halt within 6 months.
-                    </p>
-                </div>
-                
-                <div class="bg-slate-50 p-8 rounded-xl shadow-md border border-slate-200">
-                    <h4 class="font-bold mb-6 text-bg-dark uppercase text-sm tracking-wider">Projected Growth (2025-2030)</h4>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-2"><span>HPQ (Semiconductors)</span><span class="text-slate-600">+110%</span></div>
-                            <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
-                                <div class="bg-slate-600 h-full rounded-full transition-all duration-1000" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-2"><span>Industrial Diamonds</span><span class="text-slate-500">+48%</span></div>
-                            <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
-                                <div class="bg-slate-400 h-full rounded-full" style="width: 48%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="registry" class="py-12 md:py-20">
-            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-primary-slate">Mineral Criticality Registry</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-slate-300 transform transition hover:-translate-y-2">
-                    <h3 class="text-xl font-bold text-slate-700 mb-2">Industrial Diamond</h3>
-                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">The ultimate thermal conductor. Essential for heat sinks in 5G base stations and precision lasers.</p>
-                    <div class="text-[10px] font-mono bg-slate-50 p-3 rounded text-slate-800">Chemistry: Pure Carbon (C)</div>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-slate-500 transform transition hover:-translate-y-2">
-                    <h3 class="text-xl font-bold text-slate-800 mb-2">High-Purity Quartz</h3>
-                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">Crucial for silicon wafer growth. Provides the thermal stability needed for melting hyper-pure silicon.</p>
-                    <div class="text-[10px] font-mono bg-slate-100 p-3 rounded text-slate-800">Chemistry: SiO<sub>2</sub></div>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-slate-200 transform transition hover:-translate-y-2">
-                    <h3 class="text-xl font-bold text-slate-500 mb-2">Optical Calcite</h3>
-                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">Used for light polarization in medical scanners and advanced optical sensors.</p>
-                    <div class="text-[10px] font-mono bg-slate-50 p-3 rounded text-slate-800">Chemistry: CaCO<sub>3</sub></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="specs" class="py-12 md:py-20">
-            <h2 class="text-3xl font-bold mb-8 text-center text-bg-dark uppercase tracking-tight">Technical Data Sheet</h2>
-            <div class="overflow-x-auto shadow-2xl rounded-2xl">
-                <table class="w-full text-left bg-white border-collapse">
-                    <thead>
-                        <tr class="bg-primary-slate text-white uppercase text-xs tracking-widest">
-                            <th class="p-5">Mineral</th>
-                            <th class="p-5">Hardness</th>
-                            <th class="p-5">Refractive Index</th>
-                            <th class="p-5">Primary Application</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-slate-700 divide-y">
-                        <tr class="hover:bg-slate-50 transition">
-                            <td class="p-5 font-bold">Diamond</td>
-                            <td class="p-5">10.0 (Mohs)</td>
-                            <td class="p-5">2.417</td>
-                            <td class="p-5 italic text-sm">Thermal Management</td>
-                        </tr>
-                        <tr class="hover:bg-slate-50 transition">
-                            <td class="p-5 font-bold">Quartz</td>
-                            <td class="p-5">7.0 (Mohs)</td>
-                            <td class="p-5">1.544</td>
-                            <td class="p-5 italic text-sm">Semiconductor Wafers</td>
-                        </tr>
-                        <tr class="hover:bg-slate-50 transition">
-                            <td class="p-5 font-bold">Calcite</td>
-                            <td class="p-5">3.0 (Mohs)</td>
-                            <td class="p-5">1.486 - 1.658</td>
-                            <td class="p-5 italic text-sm">Optical Polarization</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-bg-dark text-slate-500 py-16 border-t border-slate-800">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-2xl font-bold text-white"><span class="text-slate-400">CRYSTAL</span>CLEAR</div>
-            <div class="flex space-x-6 text-xs font-bold uppercase tracking-widest">
-                <a href="index.html" class="hover:text-white transition">Home</a>
-                <a href="red-minerals.html" class="hover:text-red-400 transition">Red Report</a>
-                <a href="#analysis" class="hover:text-white">Analysis</a>
-                <a href="#specs" class="hover:text-white">Data Sheet</a>
-            </div>
-            <p class="text-[10px] opacity-50 max-w-xs text-center md:text-right">
-                © 2025 CRYSTAL CLEAR Intelligence. A Gemora Group Publication.
-            </p>
-        </div>
-    </footer>
-
-    <script>
-        const backToTopButton = document.getElementById("backToTop");
-        window.onscroll = function() {
-            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-                backToTopButton.classList.remove("opacity-0", "translate-y-10");
-                backToTopButton.classList.add("opacity-100", "translate-y-0");
-            } else {
-                backToTopButton.classList.add("opacity-0", "translate-y-10");
-                backToTopButton.classList.remove("opacity-100", "translate-y-0");
-            }
-        };
-        backToTopButton.onclick = function() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        };
-    </script>
+    <div class="conclusion">
+        <p>These minerals are not only fascinating but also essential for various human activities, from construction to jewelry making. They play a crucial role in our daily lives and contribute to the beauty and functionality of many products!</p>
+    </div>
 
 </body>
 </html>
