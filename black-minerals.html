@@ -3,203 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Minerals: Industrial Intelligence Report 2025</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fun Facts About Black Minerals</title>
     <style>
-        html { scroll-behavior: smooth; }
+        /* Base page styling */
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #111827; /* Deep Charcoal */
-            color: #e5e7eb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8; /* Very light slate gray */
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #1f2937; }
-        ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 10px; }
+
+        /* Header styling */
+        header {
+            background-color: #1a202c; /* Dark charcoal/black */
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 10px auto 0 auto;
+            color: #e2e8f0;
+        }
+
+        /* Main container layout */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Individual fact card styling */
+        .fact-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 6px solid #4a5568; /* Slate gray border */
+            transition: transform 0.2s ease;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .fact-card h2 {
+            color: #2d3748; /* Darker slate for headings */
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Icon/Number styling */
+        .fact-card h2 span {
+            background-color: #edf2f7;
+            color: #2d3748;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        /* List styling for examples and fun facts */
+        .fact-card ul {
+            padding-left: 20px;
+        }
+
+        .fact-card li {
+            margin-bottom: 10px;
+        }
+
+        /* Special tip section styling */
+        .tip-card {
+            background-color: #e2e8f0; /* Light gray-blue */
+            border-left: 6px solid #2b6cb0; /* Bright blue for contrast */
+            text-align: center;
+        }
+
+        .tip-card h3 {
+            color: #2b6cb0; 
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1a202c;
+            color: white;
+            margin-top: 2rem;
+        }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-obsidian': '#000000',
-                        'accent-zinc': '#71717a',
-                        'bg-card': '#1f2937',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body class="antialiased relative">
+<body>
 
-    <button id="backToTop" class="fixed bottom-6 right-6 z-[100] bg-zinc-700 text-white p-3 rounded-full shadow-2xl opacity-0 translate-y-10 transition-all duration-500 hover:bg-zinc-600">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-        </svg>
-    </button>
-
-    <header class="bg-black text-white shadow-lg sticky top-0 z-50 border-b border-zinc-800">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-6">
-                <a href="index.html" class="text-sm font-bold text-zinc-500 hover:text-white transition duration-300">
-                    ← BACK TO GEMORA
-                </a>
-                <a href="#home" class="text-2xl font-extrabold tracking-tight">
-                    <span class="text-zinc-400">Obsidian</span>Core
-                </a>
-            </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="red-minerals.html" class="hover:text-red-500 transition duration-300">Red Report</a>
-                <a href="colorless-minerals.html" class="hover:text-slate-400 transition duration-300">Colorless Report</a>
-                <a href="#analysis" class="hover:text-zinc-400 transition duration-300">Analysis</a>
-                <a href="#registry" class="hover:text-zinc-400 transition duration-300">Registry</a>
-            </nav>
-            <a href="#specs" class="hidden md:block border border-zinc-700 text-zinc-400 hover:bg-zinc-800 hover:text-white px-4 py-2 rounded-lg text-xs font-bold transition">DATA SHEET</a>
-        </div>
+    <header>
+        <h1>🖤 Fun Facts About Black Minerals for Kids!</h1>
+        <p>Black minerals are special rocks and stones that come from the Earth and have a dark color. They can be shiny, smooth, or rough, and some are even used in jewelry or art!</p>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
-
-        <section id="home" class="text-center py-16 md:py-24 bg-zinc-900 rounded-xl shadow-2xl mb-12 border-t-8 border-black">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-white leading-tight">
-                The Black Spectrum:
-                <span class="block text-zinc-500 mt-2">Conductivity and Structural Strength</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-zinc-400 max-w-3xl mx-auto mb-8">
-                Official 2025 Intelligence Report on carbon-based minerals and high-density oxides.
-            </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#registry" class="bg-white text-black hover:bg-zinc-200 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-center">
-                    Explore Minerals
-                </a>
-                <a href="index.html" class="bg-zinc-800 hover:bg-zinc-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-center">
-                    Return to Shop
-                </a>
-            </div>
-        </section>
-
-        <section id="analysis" class="py-12 md:py-20 border-b border-zinc-800">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-white">Strategic Importance</h2>
-            <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div class="p-8 bg-zinc-900 rounded-xl shadow-lg border border-zinc-800">
-                    <h3 class="text-2xl font-semibold mb-4 text-zinc-200">The Energy Catalyst</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-4">
-                        Black minerals like <strong>Graphite</strong> are the backbone of the green energy transition. As the primary component of Lithium-ion battery anodes, graphite demand is projected to quadruple by 2030.
-                    </p>
-                    <p class="text-zinc-400 leading-relaxed">
-                        Additionally, <strong>Magnetite</strong> remains the most important ore for high-grade steel, supporting the structural integrity of modern infrastructure.
-                    </p>
-                </div>
-                
-                <div class="bg-zinc-900 p-8 rounded-xl shadow-md border border-zinc-800">
-                    <h4 class="font-bold mb-6 text-zinc-200 uppercase text-sm tracking-wider">Demand Forecast (2025-2030)</h4>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-2"><span>Graphite (Battery Grade)</span><span class="text-zinc-400">+240%</span></div>
-                            <div class="w-full bg-zinc-800 h-3 rounded-full overflow-hidden">
-                                <div class="bg-white h-full rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-2"><span>Ilmenite (Titanium)</span><span class="text-zinc-400">+35%</span></div>
-                            <div class="w-full bg-zinc-800 h-3 rounded-full overflow-hidden">
-                                <div class="bg-zinc-500 h-full rounded-full" style="width: 35%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="registry" class="py-12 md:py-20">
-            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-white">Mineral Criticality Registry</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-zinc-900 p-6 rounded-xl shadow-lg border-t-4 border-zinc-500 transform transition hover:-translate-y-2">
-                    <h3 class="text-xl font-bold text-white mb-2">Natural Graphite</h3>
-                    <p class="text-zinc-400 text-sm mb-4 leading-relaxed">High electrical conductivity and heat resistance. Essential for electric vehicle battery anodes.</p>
-                    <div class="text-[10px] font-mono bg-black p-3 rounded text-zinc-300">Chemistry: C (Carbon)</div>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-black transform transition hover:-translate-y-2">
-                    <h3 class="text-xl font-bold text-black mb-2">Magnetite</h3>
-                    <p class="text-zinc-600 text-sm mb-4 leading-relaxed">Highly ferrimagnetic. A major iron ore used in industrial magnets and heavy-duty construction.</p>
-                    <div class="text-[10px] font-mono bg-zinc-100 p-3 rounded text-black font-bold">Chemistry: Fe<sub>3</sub>O<sub>4</sub></div>
-                </div>
-                <div class="bg-zinc-900 p-6 rounded-xl shadow-lg border-t-4 border-zinc-700 transform transition hover:-translate-y-2">
-                    <h3 class="text-xl font-bold text-white mb-2">Cassiterite</h3>
-                    <p class="text-zinc-400 text-sm mb-4 leading-relaxed">The primary ore of tin. Crucial for soldering in all electronic circuit boards.</p>
-                    <div class="text-[10px] font-mono bg-black p-3 rounded text-zinc-300">Chemistry: SnO<sub>2</sub></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="specs" class="py-12 md:py-20">
-            <h2 class="text-3xl font-bold mb-8 text-center text-white uppercase tracking-tight">Technical Data Sheet</h2>
-            <div class="overflow-x-auto shadow-2xl rounded-2xl">
-                <table class="w-full text-left bg-zinc-900 border-collapse">
-                    <thead>
-                        <tr class="bg-black text-white uppercase text-xs tracking-widest">
-                            <th class="p-5">Mineral</th>
-                            <th class="p-5">Mohs Hardness</th>
-                            <th class="p-5">Density (g/cm³)</th>
-                            <th class="p-5">Primary Application</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-zinc-400 divide-y divide-zinc-800">
-                        <tr class="hover:bg-zinc-800 transition">
-                            <td class="p-5 font-bold text-white">Graphite</td>
-                            <td class="p-5">1.5 - 2.0</td>
-                            <td class="p-5">2.26</td>
-                            <td class="p-5 italic text-sm">Battery Anodes</td>
-                        </tr>
-                        <tr class="hover:bg-zinc-800 transition">
-                            <td class="p-5 font-bold text-white">Magnetite</td>
-                            <td class="p-5">5.5 - 6.5</td>
-                            <td class="p-5">5.17</td>
-                            <td class="p-5 italic text-sm">Steel Manufacturing</td>
-                        </tr>
-                        <tr class="hover:bg-zinc-800 transition">
-                            <td class="p-5 font-bold text-white">Cassiterite</td>
-                            <td class="p-5">6.0 - 7.0</td>
-                            <td class="p-5">6.95</td>
-                            <td class="p-5 italic text-sm">Electronics Soldering</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-black text-zinc-600 py-16 border-t border-zinc-900">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-2xl font-bold text-white"><span class="text-zinc-500">OBSIDIAN</span>CORE</div>
-            <div class="flex space-x-6 text-xs font-bold uppercase tracking-widest">
-                <a href="index.html" class="hover:text-white transition">Home</a>
-                <a href="red-minerals.html" class="hover:text-red-500 transition">Red</a>
-                <a href="colorless-minerals.html" class="hover:text-white transition">Colorless</a>
-                <a href="#analysis" class="hover:text-white">Analysis</a>
-            </div>
-            <p class="text-[10px] opacity-50 max-w-xs text-center md:text-right">
-                © 2025 OBSIDIAN CORE Intelligence. A Gemora Group Publication.
-            </p>
+    <div class="container">
+        
+        <div class="fact-card">
+            <h2><span>?</span> What are black minerals?</h2>
+            <p>Black minerals are minerals that have a dark color, often black or very dark gray. They can be made of just one element or a mix of elements, and they all have a special, organized crystal structure.</p>
         </div>
-    </footer>
 
-    <script>
-        const backToTopButton = document.getElementById("backToTop");
-        window.onscroll = function() {
-            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-                backToTopButton.classList.remove("opacity-0", "translate-y-10");
-                backToTopButton.classList.add("opacity-100", "translate-y-0");
-            } else {
-                backToTopButton.classList.add("opacity-0", "translate-y-10");
-                backToTopButton.classList.remove("opacity-100", "translate-y-0");
-            }
-        };
-        backToTopButton.onclick = function() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        };
-    </script>
+        <div class="fact-card">
+            <h2><span>💎</span> Examples of Black Minerals</h2>
+            <ul>
+                <li><strong>Hematite:</strong> A shiny, metallic-looking mineral made of iron oxide. It can look like a mirror and is often found in rocks and soil.</li>
+                <li><strong>Obsidian:</strong> A glassy black rock that forms when lava cools very quickly. It’s smooth and can be used to make tools.</li>
+                <li><strong>Onyx:</strong> A type of chalcedony with straight, parallel bands of different colors. Black onyx is very popular in jewelry.</li>
+                <li><strong>Basalt:</strong> A dark, fine-grained igneous rock made mostly of iron and magnesium minerals. It’s common on Earth’s surface and under the ocean.</li>
+            </ul>
+        </div>
+
+        <div class="fact-card">
+            <h2><span>🎨</span> Why are they black?</h2>
+            <p>The color comes from the minerals inside them. For example, hematite’s black color is from iron, and obsidian’s blackness comes from its glassy, dense structure.</p>
+        </div>
+
+        <div class="fact-card">
+            <h2><span>✨</span> Fun Facts</h2>
+            <ul>
+                <li>Some black minerals are used in art and jewelry, like black onyx for rings and pendants.</li>
+                <li>Obsidian was used by ancient people to make sharp tools and weapons.</li>
+                <li>Hematite is so shiny it can look like a mirror, and it’s found all over the world.</li>
+                <li>Black minerals can be found in rocks, sand, and even in your backyard soil!</li>
+            </ul>
+        </div>
+
+        <div class="fact-card tip-card">
+            <h3>🔬 Cool Property to Know!</h3>
+            <p>Mineral scientists use tools like a <strong>streak test</strong> (rubbing the mineral on a piece of pottery) to see its color, and the <strong>Mohs hardness scale</strong> to see how hard it is.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>So next time you find a shiny black rock, you might be holding a piece of Earth’s history — a real black mineral treasure!</p>
+    </footer>
 
 </body>
 </html>
